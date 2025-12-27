@@ -1,0 +1,69 @@
+# Server Services Overview
+
+This document describes the services running on the Dell PowerEdge R220 servers
+within the server room environment.
+
+---
+
+## Server Roles Summary
+
+| Server | Hostname | Role |
+|------|---------|------|
+| Dell R220 #1 | SRV-PVE-01 | Virtualization Host |
+| Dell R220 #2 | SRV-PVE-02 | Virtualization Host / Backup |
+
+---
+
+## Core Infrastructure Services (Virtual Machines)
+
+### 1. Active Directory & DNS
+- Domain Controller
+- Centralized authentication
+- DNS name resolution
+
+**VM Name:** `DC-01`  
+**OS:** Windows Server  
+**IP:** VLAN 10 (Static)
+
+---
+
+### 2. File Server
+- Central file storage
+- NTFS permissions
+- Department-based shares
+
+**VM Name:** `FS-01`  
+**OS:** Windows Server  
+**Storage:** RAID-backed
+
+---
+
+### 3. Monitoring Server
+- Network and system monitoring
+- Resource usage tracking
+- Alerting
+
+**VM Name:** `MON-01`  
+**OS:** Linux  
+**Tools:** Zabbix / PRTG (Optional)
+
+---
+
+### 4. Backup Server
+- VM-level backups
+- Scheduled snapshots
+- Offsite backup support
+
+**VM Name:** `BKP-01`  
+**OS:** Linux  
+**Backup Target:** NAS / External Storage
+
+---
+
+### 5. Log & Audit Server
+- Central log collection
+- Security event tracking
+
+**VM Name:** `LOG-01`  
+**OS:** Linux  
+**Use Case:** SOC readiness
