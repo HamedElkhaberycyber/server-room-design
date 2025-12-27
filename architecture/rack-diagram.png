@@ -1,1 +1,31 @@
+# Rack Diagram
+
+## Rack Type
+- 42U Enclosed Floor Standing Rack
+- Front-to-back airflow
+- Lockable doors
+
+## Rack Unit Allocation (Top → Bottom)
+
+| U Position | Device |
+|----------|--------|
+| U42–U39 | Blanking Panels (Airflow Control) |
+| U38–U37 | Patch Panels |
+| U36–U35 | Horizontal Cable Management |
+| U34 | Core Switch #1 |
+| U33 | Core Switch #2 |
+| U32 | Omada Controller |
+| U31 | MikroTik Router |
+| U30 | Cable Management |
+| U29 | Dell PowerEdge R220 – Server 1 |
+| U28 | Dell PowerEdge R220 – Server 2 |
+| U27 | ADSL Routers (7×) |
+| U26 | Power Distribution |
+| U25–U23 | UPS |
+| U22–U1 | Reserved / Future Expansion |
+
+## Design Notes
+- Network equipment placed in upper half for easy access
+- Servers positioned mid-rack for weight balance
+- UPS installed at bottom for stability
 
