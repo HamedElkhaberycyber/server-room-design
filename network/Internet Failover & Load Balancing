@@ -1,0 +1,24 @@
+# Internet Failover & Load Balancing Design
+
+## WAN Architecture
+- 7× ADSL internet connections
+- All WAN links terminate on MikroTik router
+
+## Router Role
+- Load balancing across multiple ISPs
+- Automatic failover
+- Traffic prioritization
+
+## Load Balancing Method
+- PCC (Per Connection Classifier)
+- Even distribution of outbound sessions
+
+## Failover Behavior
+- Link monitoring via gateway ping
+- Automatic route removal on link failure
+- Seamless traffic rerouting
+
+## Traffic Control
+- Critical services prioritized (Servers, VPN)
+- Guest Wi-Fi limited bandwidth
+- Per-user bandwidth control applied
